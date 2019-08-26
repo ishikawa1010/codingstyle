@@ -37,7 +37,7 @@ class NewPhoneNumberViewController: UIViewController, UITextFieldDelegate {
       print(error.localizedDescription)
     }
     
-    
+    //NotificationCenter
     NotificationCenter.default.addObserver(self, selector: #selector(UpdateStatusViewController.keyboardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
     
     NotificationCenter.default.addObserver(self, selector: #selector(UpdateStatusViewController.keyboardWillHide(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
